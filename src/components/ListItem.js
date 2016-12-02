@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
-import { Text, TouchableWithoutFeedback, View } from 'react-native';
+import {
+  LayoutAnimation, 
+  Text, 
+  TouchableWithoutFeedback, 
+  View 
+} from 'react-native';
 import { connect } from 'react-redux';
 import { CardSection } from './common';
 import * as actions from '../actions';
 
 class ListItem extends Component {
+  componentWillUpdate() {
+    LayoutAnimation.spring();
+  }
   renderDescription() {
+    const { descriptionStyle } = styles;
     const { item, expanded } = this.props;
     if (expanded) {
       return (
-        <Text>{item.description}</Text>
+        <CardSection>
+          <Text style={descriptionStyle}>{item.description}</Text>
+        </CardSection>
       );
     }
   }
@@ -39,6 +50,11 @@ const styles = {
   titleStyle: {
     fontSize: 18,
     paddingLeft: 15
+  },
+  descriptionStyle: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15
   }
 };
 
