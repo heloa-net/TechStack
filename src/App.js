@@ -1,10 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Platform, UIManager, View } from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import { Header } from './components/common';
 import LibraryList from './components/LibraryList';
+
+if (Platform.OS === 'android') {
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+} 
 
 const App = () => {
   return (
