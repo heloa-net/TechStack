@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
+import LibraryReducer from './LibraryReducer';
+import SelectionReducer from './SelectionReducer';
 
 export default combineReducers({
-  // one reducer called libraries
-  // that always returns an empty array
-  libraries: () => []
+  // libraries is a state object
+  libraries: LibraryReducer,
+  selectedLibraryId: SelectionReducer
 });
