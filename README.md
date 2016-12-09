@@ -12,7 +12,6 @@ This app is available for Android.
 
 [Download](https://github.com/she-dev/TechStack/files/629178/TechStack.apk.zip) 
 
-### Screenshots
+### Demo
 
-![TechStack app library list screenshot](https://lh3.googleusercontent.com/h-DRHzgzemCudY3lzA_kB8ffqmhKEflj4QdtURCbUprZtUrPpYldd0qTrVDwDOF3fCmBYqc_VR_8yys=w1440-h798)
-![TechStack app library expanded screenshot](https://lh4.googleusercontent.com/ZH23QkJ3DY-CTWlV32LNnAmhikHbtBJhi4CVZcuzgxqMeTEVEDDPaABPqpWAIe4KWR8pfYu5jswAXso=w1440-h754)
+![TechStack app demo](http://i.imgur.com/kF4f96T.gif)
